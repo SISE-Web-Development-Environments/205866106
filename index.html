@@ -5,6 +5,25 @@
 </head>
 <body>
 <div id="menu">
+<style>
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:crimson;
+    }
+    li {
+      float: left;
+    }
+    li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  </style>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -17,160 +36,106 @@
 <section id="about" class="section">
 <br/>
 <br/>
+<h1 class="title"> ABOUT ME </h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
+My name is Shiran Golzar, I'm 24 years old and originally from Rishon Lezion. I am a third year student in the
+Information Systems Engeneering department in Ben Gurion University. My hobbies are Learning about the world,
+cooking, watching series and playing and being with my friends.
 <br/>
 </section>
 
 <section id="photos" class="section">
 <br/>
+<h1 class="title"> MY PHOTO </h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
+<div class="center">
+<img src="img1.jpg" width=300 height=300>
+<img src="img2.jpg" width=400 height=300>
+<img src="img3.jpg" width=400 height=300>
+<img src="img4.jpg" width=300 height=300>
+</div>
 <br/>
 </section>
 
 <section id="playlist" class="section">
 <br/>
+<h1 class="title"> MY PLAYLIST </h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
+<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/Wv1Fj3WJh2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 </section>
 
 <section id="like" class="section">
 <br/>
+<h1 class="title"> GIVE ME A LIKE </h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsise-web-development-environments.github.io%2Fassignment1-shirangol%2F.&width=300&layout=standard&action=like&size=small&share=true&height=35&appId" width="300" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="center"></iframe>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
 <br/>
+<h1 class="title"> SCAN MY CODE </h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
+<img src="file:///C:/Users/shira/Desktop/net/assignment1-shirangol-master/assignment1-shirangol-master/codeScan.png"  width=200 height=200 class="center"></img>
 <br/>
 </section>
 
 <section id="spa" class="section">
 <br/>
+<h1 class="title"> ANSWER </h1>
 <br/>
+<div>
+<div>
+  <h1 id="ans1">WEB 1.0</h1>
+  <br/>
+  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
+  <br/>
+  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
+</div>
 <br/>
+<div id="ans2">
+  <h1>WEB 2.0</h1>
+  <br/>
+  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
+  <br/>
+  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
+</div>
+</div>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
+<div id="ans3">
+  <h1>WEB 2.0</h1>
+  <br/>
+  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
+  <br/>
+  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
+</div>
+</div>
 <br/>
 </section>
 
 <section id="contact" class="section">
 <br/>
+<h1 class="title"> CONTACT ME </h1>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
+<form class="center" action="mailto:shirangolzar@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Your Name: </label>
+  <input type="text" name="name"><br>
+  <br/>
+  <br/>
+  <label for="comment">Comment:  </label>
+  <input type="text" name="comment" style="height:200px;width: 450px;"><br><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+  <select name="emoji" id="emo" onclick="add()" size="1" style="height:33px;width: 45px;">
+    <option value="😭">😭</option>
+    <option value="😁">😁</option>
+    <option value="😘">😘</option>
+    <option value="😴">😴</option>
+    <option value="👍">👍</option>
+  </select>
+  </form>
 <br/>
 <br/>
 </section>
