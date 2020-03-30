@@ -1,158 +1,184 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-<div id="menu">
-<style>
-   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:crimson;
+  <div id="menu">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: crimson;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+    </style>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#photos">My Photos</a></li>
+    <li><a href="#playlist">My Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#spa">Q&A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </div>
+
+  <section id="about" class="section">
+    <br />
+    <br />
+    <h1 class="title"> ABOUT ME </h1>
+    <br />
+    My name is Shiran Golzar, I'm 24 years old and originally from Rishon Lezion. I am a third year student in the
+    Information Systems Engeneering department in Ben Gurion University. My hobbies are Learning about the world,
+    cooking, watching series and playing and being with my friends.
+    <br />
+  </section>
+
+  <section id="photos" class="section">
+    <br />
+    <h1 class="title"> MY PHOTO </h1>
+    <br />
+    <div class="center">
+      <img src="img1.jpg" width=300 height=300>
+      <img src="img2.jpg" width=400 height=300>
+      <img src="img3.jpg" width=400 height=300>
+      <img src="img4.jpg" width=300 height=300>
+    </div>
+    <br />
+  </section>
+
+  <section id="playlist" class="section">
+    <br />
+    <h1 class="title"> MY PLAYLIST </h1>
+    <br />
+    <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/Wv1Fj3WJh2A" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+  </section>
+
+  <section id="like" class="section">
+    <br />
+    <h1 class="title"> GIVE ME A LIKE </h1>
+    <br />
+    <iframe
+      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsise-web-development-environments.github.io%2Fassignment1-shirangol%2F.&width=300&layout=standard&action=like&size=small&share=true&height=35&appId"
+      width="300" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+      allowTransparency="true" allow="encrypted-media" class="center"></iframe>
+    <br />
+  </section>
+
+  <section id="qrcoder" class="section">
+    <br />
+    <h1 class="title"> SCAN MY CODE </h1>
+    <br />
+    <img src="codeScan.png" width=200 height=200 class="center"></img>
+    <br />
+  </section>
+
+  <section id="spa" class="section">
+    <br />
+    <h1 class="title"> Q&R </h1>
+    <br />
+    <table style="width: 90%;">
+      <tr>
+        <th>WEB 1.0</th>
+        <th>WEB 2.0</th>
+        <th>WEB 3.0</th>
+      </tr>
+      <tr>
+        <td>
+          הרשת הייתה לקריאה בלבד עם מעט מאד אינטרקציה
+          <br>
+          לא היה אפשר לתקשר עם האתר או לשתף תוכן
+          <br>
+          מטרת בעלי האתרים הייתה אפשר מידע זמין אונליין
+        </td>
+        <td>
+          הרשת הייתה לקריאה וכתיבה
+          <br>
+          ואפשרה אינטרקציה חברתית של קהל גדול עם תחומי עניין משותפים
+        </td>
+        <td>
+          הרשת הייתה לקריאה וכתיבה והתמקד בקישור של מידע
+          <br>
+          אנשים בונים אפליקציות שלאנשים אחרים יכולה להיות אינטרקציה איתן
+          <br>
+          חברות בונות פךטפורמות שמאפשרו לאנשים לפרסם שירותים ולקשר בין אנשים
+          <br>
+          כמו פייסבוק
+        </td>
+      </tr>
+    </table>
+    <br />
+    <h2>הבדלים בחיפוש שאילתא</h2>
+    <table style="width: 70%;">
+      <tr>
+        <th>WEB 1.0</th>
+        <th>WEB 3.0</th>
+      </tr>
+      <td>נדרש להכניס את כתובת המדוייקת של אתר
+        <br>
+        על מנת לקבל תוצאות לשאילתא
+      </td>
+      <td>נדרש להכניס את השאילתא ונקבל תוצאות מדוייקות יותר
+        <br>
+        גם עבור מילים נרדפות בשאילתא
+      </td>
+    </table>
+  </section>
+
+  <section id="contact" class="section">
+    <br />
+    <h1 class="title"> CONTACT ME </h1>
+    <br />
+    <br />
+    <form class="center" action="mailto:shirangolzar@gmail.com" method="GET" enctype="text/plain">
+      <label for="name">Subject: </label>
+      <input type="text" name="Subject"><br>
+      <br />
+      <br />
+      <label for="comment">Comment: </label>
+      <input type="text" name="body" id="comment" style="height:200px;width: 450px;"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      <select id="emoji" onclick="add()" size="1" style="height:33px;width: 45px;">
+        <option name="emoj" value="&#128512">&#128512;</option>
+        <option name="emoj" value="😁">😁</option>
+        <option name="emoj" value="😘">😘</option>
+        <option name="emoj" value="😴">😴</option>
+        <option name="emoj" value="👍">👍</option>
+      </select>
+      <input type="button" value="add" onclick="add()"></input>
+    </form>
+    <br />
+    <br />
+  </section>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+  <script>
+    function add() {
+      var ele = document.getElementById("emoji").options;
+      var index = document.getElementById("emoji").selectedIndex;
+      document.getElementById("comment").value += ele[index].value;
     }
-    li {
-      float: left;
-    }
-    li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-  </style>
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<h1 class="title"> ABOUT ME </h1>
-<br/>
-My name is Shiran Golzar, I'm 24 years old and originally from Rishon Lezion. I am a third year student in the
-Information Systems Engeneering department in Ben Gurion University. My hobbies are Learning about the world,
-cooking, watching series and playing and being with my friends.
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<h1 class="title"> MY PHOTO </h1>
-<br/>
-<div class="center">
-<img src="img1.jpg" width=300 height=300>
-<img src="img2.jpg" width=400 height=300>
-<img src="img3.jpg" width=400 height=300>
-<img src="img4.jpg" width=300 height=300>
-</div>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<h1 class="title"> MY PLAYLIST </h1>
-<br/>
-<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/Wv1Fj3WJh2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<h1 class="title"> GIVE ME A LIKE </h1>
-<br/>
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsise-web-development-environments.github.io%2Fassignment1-shirangol%2F.&width=300&layout=standard&action=like&size=small&share=true&height=35&appId" width="300" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="center"></iframe>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<h1 class="title"> SCAN MY CODE </h1>
-<br/>
-<img src="codeScan.png"  width=200 height=200 class="center"></img>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<h1 class="title"> ANSWER </h1>
-<br/>
-<div>
-<div>
-  <h1 id="ans1">WEB 1.0</h1>
-  <br/>
-  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
-  <br/>
-  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
-</div>
-<br/>
-<div id="ans2">
-  <h1>WEB 2.0</h1>
-  <br/>
-  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
-  <br/>
-  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
-</div>
-</div>
-<br/>
-<div id="ans3">
-  <h1>WEB 3.0</h1>
-  <br/>
-  התוכן הנצרך ברשת מפורסם ע"י חברות וניתן לקריאה בלבד
-  <br/>
-  אחזור המידע אינו מדוייק אך נעשה בצורה מהירה
-</div>
-</div>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<h1 class="title"> CONTACT ME </h1>
-<br/>
-<br/>
-<form class="center" action="mailto:shirangolzar@gmail.com" method="post" enctype="text/plain">
-  <label for="name">Your Name: </label>
-  <input type="text" name="name"><br>
-  <br/>
-  <br/>
-  <label for="comment">Comment:  </label>
-  <input type="text" name="comment" style="height:200px;width: 450px;"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  <select name="emoji" id="emo" onclick="add()" size="1" style="height:33px;width: 45px;">
-    <option value="😭">😭</option>
-    <option value="😁">😁</option>
-    <option value="😘">😘</option>
-    <option value="😴">😴</option>
-    <option value="👍">👍</option>
-  </select>
-  </form>
-<br/>
-<br/>
-</section>
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  </script>
 </body>
+
 </html>
